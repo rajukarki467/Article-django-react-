@@ -19,8 +19,9 @@ class Articlelist extends Component {
         })
     }
     render(){
-        var {articles} = this.state
-    const shw = articles.map(list => <Article title = {list.title} content = {list.content} />  )
+      var {articles} = this.state
+      // updated button
+      const shw = articles.map(list => <Article title = {list.title} content = {list.content} articleID = {list.id} />  )
     return(
       <div>
         {shw}

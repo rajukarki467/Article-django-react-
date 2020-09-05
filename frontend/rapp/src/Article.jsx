@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 function Article(props) {
     
@@ -8,6 +9,9 @@ function Article(props) {
       <p>
         content : {props.content} <br />{" "}
       </p>
+      {/* updated button */}
+
+      <Link to= {`/${props.articleID}`} >View</Link>
     </div>
   );
 }

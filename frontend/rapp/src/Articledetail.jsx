@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-
+import { Link } from "react-router-dom";
 import axios from "axios";
 
 
@@ -29,6 +29,9 @@ class Articledetail extends Component {
                 <p>
                     content : {content} <br />{" "}
                 </p>
+                {/* updated button */}
+
+                <Link to="/" >Home</Link>
             </div>
         )
     }
