@@ -19,7 +19,7 @@ function Article(props) {
       </p>
       {/* updated button */}
 
-      <Link to= {`/${props.articleID}`} className="btn btn-outline-primary mx-1" >View</Link>
+      <Link to= {`/Detail/${props.articleID}`} className="btn btn-outline-primary mx-1" >View</Link>
       <Link to= {`/Edit/${props.articleID}`} className="btn btn-outline-warning mx-1" >Edit</Link>
       <Link onClick={()=> deleteuser(props.articleID)} className="btn btn-outline-danger mx-1" >Delete</Link>
     </div>
